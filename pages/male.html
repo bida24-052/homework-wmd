@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Collection - AngyWoolz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .product-card {
+            background-color: white;
+            border: none;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        .btn-gold {
+            background-color: var(--gold);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .btn-gold:hover {
+            background-color: var(--brown);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            color: var(--dark-green);
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background: var(--gold);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card-img-top, .slideshow-image {
+            border-radius: 15px 15px 0 0;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-title {
+            color: var(--dark-green);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .card-text {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-olive" href="index.html">
+                <i class="fas fa-tshirt me-2"></i>AngyWoolz
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="male.html"><i class="fas fa-male me-1"></i>Male</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="female.html"><i class="fas fa-female me-1"></i>Female</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accessories.html"><i class="fas fa-bi-stars me-1"></i>Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center section-title">Male Collection</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="slideshow-container">
+                            <img src="../images/male/alex.jpeg" class="slideshow-image active" alt="alex jersey">
+                            <div class="slideshow-nav"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Male Jersery</h5>
+                            <p class="card-text">BWP 499.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="slideshow-container">
+                            <img src="../images/male/blue fire.jpeg" class="slideshow-image active" alt="Blue Fire Jersey">
+                            <div class="slideshow-nav"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Fire Jersey</h5>
+                            <p class="card-text">BWP 399.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/granny squares.jpg" class="card-img-top" alt="Granny squares Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">Granny squares Jersery</h5>
+                            <p class="card-text">BWP 449.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/long sleeve.jpg" class="card-img-top" alt="long sleeve">
+                        <div class="card-body">
+                            <h5 class="card-title">long Sleeve Jersey</h5>
+                            <p class="card-text">BWP 599.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/Men hollow out.png" class="card-img-top" alt="Men hollow out Jersey">
+                        <div class="card-body">
+                            <h5 class="card-title">Men hollow out Jersey</h5>
+                            <p class="card-text">BWP 349.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/menshirt.png" class="card-img-top" alt="Men's Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title">Men's Shirt</h5>
+                            <p class="card-text">BWP 649.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/short sleeve.jpg" class="card-img-top" alt="short sleeve">
+                        <div class="card-body">
+                            <h5 class="card-title">short sleeve</h5>
+                            <p class="card-text">BWP 549.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="../images/male/white sweater.jpeg" class="card-img-top" alt="white sweater">
+                        <div class="card-body">
+                            <h5 class="card-title">white sweater</h5>
+                            <p class="card-text">BWP 899.99</p>
+                            <button class="btn btn-olive w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-copyright me-2"></i>2025 AngyWoolz. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        
+
+         // Add slideshow navigation dots
+         document.querySelectorAll('.slideshow-container').forEach(container => {
+            const images = container.querySelectorAll('.slideshow-image');
+            const nav = container.querySelector('.slideshow-nav');
+            
+            images.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('slideshow-nav-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => showSlide(container, index));
+                nav.appendChild(dot);
+            });
+        });
+
+        function showSlide(container, index) {
+            const images = container.querySelectorAll('.slideshow-image');
+            const dots = container.querySelectorAll('.slideshow-nav-dot');
+            
+            images.forEach(img => img.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            images[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        // Add fade-in-up animation to products
+        document.querySelectorAll('.product-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('fade-in-up');
+        });
+    </script>
+</body>
+</html> 

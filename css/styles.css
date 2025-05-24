@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #2C3E50;
+    --accent-color:#676025;
+    --text-light: #FFFFFF;
+    --text-dark: #2C3E50;
+    --background-light: #F8F9FA;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+.navbar {
+    padding: 1rem 0;
+    transition: all var(--transition-speed);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    transition: color var(--transition-speed);
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.title h1{
+    color:#676025;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: url("");
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/female/wool.jpg') center/cover;
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    color: var(--text-light);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .lead {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-section .display-4{
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.btn-olive {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all var(--transition-speed);
+    border: none;
+}
+
+.btn-olive:hover {
+    background-color: #219653;
+    color: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+/* Carousel Styles */
+.carousel-section {
+    padding: 4rem 0;
+    background-color: var(--background-light);
+}
+
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-item {
+        height: 300px;
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    border-radius: 10px 10px 0 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-card .card-text {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e9ecef;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--olive);
+    box-shadow: 0 0 0 0.2rem rgba(88, 118, 27, 0.25);
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--olive);
+}
+
+/* Mission Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .h4 {
+    color: var(--dark-green);
+}
+
+/* Text Styles */
+.text-olive {
+    color: var(--accent-color) !important;
+}
+
+
+/* Mission Section */
+.mission-section h2,
+.mission-section p {
+    color: var(--accent-color);
+}
+
+.mission-section h3
+.mission-section p {
+    color: var(--accent-color);
+}
+.about-section h2,
+.about-section p {
+    color: var(--accent-color);
+}
+
