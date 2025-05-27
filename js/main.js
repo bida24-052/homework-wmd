@@ -47,7 +47,7 @@ function initSlideshow(container) {
 
 // Add to Cart functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const addToCartButtons = document.querySelectorAll('.btn-olive, .btn-gold');
+    const addToCartButtons = document.querySelectorAll('button.btn-olive, button.btn-gold');
     
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function(e) {
